@@ -1,10 +1,10 @@
-+++ title = "Hello There!"
-
-date = 2021-03-07
++++
+title = "Hello there!"
+date = 2021-11-14
+category = "Personal"
 
 [taxonomies]
-categories = ["Personal"]
-tags = ["personal"]
+tags = ["Personal"]
 +++
 
 # Hello there!
