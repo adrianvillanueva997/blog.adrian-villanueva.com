@@ -5,6 +5,7 @@ category = "Personal"
 
 [taxonomies]
 tags = ["Personal"]
+categories = ["Personal"]
 +++
 
 # Hello there!
