@@ -1,4 +1,4 @@
-base_url = "https://blog.adrian-villanueva.com"
+base_url = "https://blog.adrianvillanueva.com"
 compile_sass = true
 title = "Blog - Adrián Villanueva"
 description = "Here I come to complain about stuff"
@@ -15,6 +15,6 @@ after_dark_menu = [
     {url = "$BASE_URL", name = "Home"},
     {url = "$BASE_URL/categories", name = "Categories"},
     {url = "$BASE_URL/tags", name = "Tags"},
-    {url = "https://adrian-villanueva.com", name="Portfolio"},
+    {url = "https://adrianvillanueva.com", name="Portfolio"},
 ]
 after_dark_title = "The dark side of the internet"
