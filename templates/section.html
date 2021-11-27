@@ -1,39 +1,31 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
 
-{% block header %}
-<header class='hero'>
-  <div class='hero-body pb-0'>
-    <div class='container'>
-      <div class='has-text-centered'>
-        <h1 class="title">
-          <span class="icon-text">
-            <span class="icon">
-              <i class="fas fa-tag"></i>
-            </span>
-            <span>{{ term.name }}</span>
-          </span>
-        </h1>
-      </div>
-    </div>
-  </div>
-</header>
-{% endblock %}
+{% block title %}
+{{ config.title }} | {{ section.title }}
+{% endblock title %}
 
 {% block content %}
 <section class="section">
   <div class="container">
+    <div class="has-text-centered">
+      <h1 class="title is-2">{{ section.title }}</h1>
+      <p class="subtitle is-4">{{ section.description }}</p>
+    </div>
+    <div class="content">
+      {{ section.content | safe }}
+    </div>
     <div class="columns is-centered">
       <div class="column is-9">
         {% if paginator %}
         {% set pages = paginator.pages %}
         {% else %}
-        {% set pages = term.pages %}
+        {% set pages = section.pages %}
         {% endif %}
 
         {% for page in pages %}
         <article class="box">
           <h2 class="title">
-            <a href='{{ page.permalink }}'>
+            <a class="has-text-dark" href='{{ page.permalink }}'>
               {{ page.title }}
             </a>
           </h2>
@@ -48,7 +40,7 @@
           </div>
           <div class="content mt-2">
             {{ page.summary | safe }}
-            <a href='{{ page.permalink }}'>
+            <a class="has-text-danger-dark has-text-weight-semibold" href='{{ page.permalink }}'>
               Read More
               <span class="icon is-small">
                 <i class="fas fa-arrow-right fa-xs"></i>
@@ -73,4 +65,4 @@
     </div>
   </div>
 </section>
-{% endblock content %}
+{% endblock %}
