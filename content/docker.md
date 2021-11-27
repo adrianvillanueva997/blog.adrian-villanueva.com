@@ -1,6 +1,6 @@
 +++
 title = "Using buildkit with docker"
-date = 2021-11-127
+date = 2021-11-27
 category = "devops"
 
 [taxonomies]
