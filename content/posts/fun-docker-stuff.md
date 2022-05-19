@@ -1,5 +1,5 @@
 +++
-title="New knowledge about Docker"
+title="Buildkit with docker"
 date=2021-11-27
 
 [taxonomies]
