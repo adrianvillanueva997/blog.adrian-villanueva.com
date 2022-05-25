@@ -277,20 +277,16 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/galleria.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@8.9.2/dist/mermaid.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.xkcd@1.1.13/dist/chart.xkcd.min.js"></script>
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.6.1/themes/folio/galleria.folio.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
     <script src="{{ get_url(path='elasticlunr.min.js') }}"></script>
     <script src="{{ get_url(path='search_index.' ~ lang ~ '.js') }}"></script>
     {%- if lang != "en" -%} {%- block other_lang_search_js -%} {%- endblock -%}
     {%- endif -%}
     <script src="{{ get_url(path='js/site.js') }}"></script>
-    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
-    <script>
-      mermaid.initialize({ startOnLoad: true });
-    </script>
-
     {% block custom_js %} {% endblock %} {% block user_custom_js %} {% endblock
     %}
   </body>
