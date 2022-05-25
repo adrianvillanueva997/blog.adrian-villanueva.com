@@ -2,8 +2,8 @@
 base_url = "https://blog.adrianvillanueva.com"
 
 # The site title and description; used in feeds by default.
-title = "Adrián Villanueva's Blog"
-description = "A simple blog about a software engineer"
+title = "Adrián Villanueva"
+description = "My small internet corner"
 
 # The default language; used in feeds.
 default_language = "en"
