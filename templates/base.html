@@ -240,17 +240,7 @@
             {% for pager in range(start=1, end=paginator.number_pagers+1) %}
             <li>
               <a
-                class="
-                  pagination-link
-                  {%
-                  if
-                  paginator.current_index
-                  ==
-                  pager
-                  %}is-current{%
-                  endif
-                  %}
-                "
+                class="pagination-link {% if paginator.current_index == pager %}is-current{% endif %}"
                 href="{{ paginator.base_url }}{{pager}}"
                 aria-label="Goto page {{pager}}"
               >
@@ -296,6 +286,10 @@
     {%- if lang != "en" -%} {%- block other_lang_search_js -%} {%- endblock -%}
     {%- endif -%}
     <script src="{{ get_url(path='js/site.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true });
+    </script>
 
     {% block custom_js %} {% endblock %} {% block user_custom_js %} {% endblock
     %}
