@@ -29,7 +29,7 @@ subtitle = "patata"
 # interal CDN resource
 useCDN = false
 
-favicon = "/icon/favicon.png"
+favicon = "/icons/favicon.ico"
 
 copyright = ""
 
