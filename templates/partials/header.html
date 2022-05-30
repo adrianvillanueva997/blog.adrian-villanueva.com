@@ -20,7 +20,7 @@
     {% endif %}
 
     {% if config.extra.favicon %}
-         <link rel="icon" type="image/png" href={{ config.extra.favicon }} />
+         <link rel="icon" type="image/png" href="icons/favicon.ico" />
     {% endif %}
 
     {% block site_title %}
@@ -47,7 +47,7 @@
     {% if config.extra.social and config.extra.useCDN | default(value=false) %}
         <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     {% elif config.extra.social or config.extra.mode == "toggle" %}
-        <script src={{ get_url(path="js/feather.min.js") }}></script>
+        <script src="js/feather.min.js"></script>
     {% endif %}
 
 
@@ -56,17 +56,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
     {% else %}
-        <link href={{ get_url(path="css/fonts.css") }} rel="stylesheet" />
+        <link href="css/fonts.css" rel="stylesheet" />
     {% endif %}
 
-    <link rel="stylesheet" type="text/css" media="screen" href={{ get_url(path="css/main.css") }} />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 
     {% if config.extra.mode == "auto" or config.extra.mode == "dark" or config.extra.mode == "toggle" %}
         <link
             rel="stylesheet"
             id="darkModeStyle"
             type="text/css"
-            href={{ get_url(path="css/dark.css") }}
+            href="css/dark.css"
             {% if config.extra.mode == "auto" %}
                 media="(prefers-color-scheme: dark)"
             {% endif %}
