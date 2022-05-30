@@ -8,8 +8,10 @@ WORKDIR /site
 FROM zola-base as builder
 WORKDIR /app
 COPY . .
-RUN git submodule update --init --recursive && zola serve --interface 0.0.0.0 --port 80
+RUN git submodule update --init --recursive
 EXPOSE 80
+# zola serve --interface 0.0.0.0 --port 80
+CMD [ "zola", "serve","--interface","0.0.0.0","--port","80" ]
 
 # FROM nginx:stable-alpine
 # RUN mv /usr/share/nginx/html/index.html /usr/share/nginx/html/old-index.html
