@@ -4,7 +4,7 @@ date = "2022-05-30"
 path = "resume"
 +++
 
-## Adrian Villanueva
+## Adrián Villanueva Martínez
 
 ### Software Engineer | Amsterdam / Madrid
 
