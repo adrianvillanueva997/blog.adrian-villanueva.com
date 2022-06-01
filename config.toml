@@ -1,12 +1,11 @@
 baseurl = "/"
 enableEmoji = true
 footnotereturnlinkcontents = "↩"
-googleAnalytics = ""
+googleAnalytics = "G-Q1WHKR2FB3"
 ignoreFiles = ["\\.Rmd$", "_files$", "_cache$"]
 languageCode = "en-us"
 theme = ""
 title = "Avm"
-
 [markup.goldmark.renderer]
 unsafe = true
 
