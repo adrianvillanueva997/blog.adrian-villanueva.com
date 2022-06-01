@@ -2,4 +2,4 @@
 
 Hello there! Now I write stuff.
 
-This was made using zola.
+This was made using Hugo.
